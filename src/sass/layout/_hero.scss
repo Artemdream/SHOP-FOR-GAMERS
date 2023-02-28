@@ -1,0 +1,134 @@
+.hero {
+  background-image: url(../images/hero/bg-fon-hero.png), url(../images/hero/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: 80% -75px, 80% -80px;
+  background-size: cover, cover;
+
+  @include retina {
+    background-image: url(../images/hero/bg-fon-hero-2x.png), url(../images/hero/bg-hero-2x.jpg);
+  }
+
+  @include mobile {
+    background-image: url(../images/hero/bg-fon-hero.png), url(../images/hero/bg-hero.jpg);
+    background-repeat: no-repeat,
+      no-repeat;
+    background-position:101% -15px, 100% -20px;
+    background-size: cover, cover;
+    
+    @include retina {
+      background-image: url(../images/hero/bg-fon-hero-2x.png), url(../images/hero/bg-hero-2x.jpg);
+    }
+  }
+
+  @include tablet {
+    background-image: url(../images/hero/bg-fon-hero.png),
+       url(../images/hero/bg-hero.jpg);
+    background-size: cover, cover;
+    background-position:49% -40px, 50% -50;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url(../images/hero/bg-fon-hero-2x.png),
+        url(../images/hero/bg-hero-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    background-image: url(../images/hero/bg-fon-hero.png), url(../images/hero/hero-bg.jpg);
+    background-size: cover  cover;
+    background-position: 50% -136px;
+    background-repeat:  no-repeat, no-repeat;
+    overflow: hidden;
+
+    @include retina {
+      background-image: url(../images/hero/bg-fon-hero-2x.png),
+        url(../images/hero/bg-hero-2x.jpg);
+    }
+  }
+}
+
+.hero-container {
+  padding: 0 16px 0 16px;
+  background-image: url(../images/hero/bg-gadget-mob.png);
+  background-size: 304px 472px;
+  background-position: right -48px;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    background-image: url(../images/hero/bg-gadget-mob.png);
+    background-size: 304px 472px;
+    background-position: 100% -48px;
+    background-repeat: no-repeat;
+  }
+
+  @include tablet {
+    padding: 0 40px;
+    background-image: url(../images/hero/gadjet-tab.png);
+    background-size: 379px 616px;
+    background-position: right top 33px;
+    background-repeat: no-repeat;
+  }
+
+  @include desktop {
+    background-image: url(../images/hero/des.png);
+    background-size: 668px 652px;
+    background-position: right 0 top 69px;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero-box {
+  padding: 150px 0 102px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 154px 0 208px 0;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 0 209px 102px;
+  }
+  
+}
+
+.hero-title {
+  display: block;
+  text-align: center;
+  align-items: center;
+  max-width: 247px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.187;
+  color: var(--primary-text-color);
+  margin-bottom: 25px;
+
+  @include mobile {
+    line-height: 1.12;
+  }
+
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.18;
+    text-align: left;
+    max-width: 388px;
+    margin-bottom: 94px;
+  }
+
+  @include desktop {
+    font-size: 64px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+    max-width: 515px;
+  }
+}
+
+.hero-link {
+  text-align: center;
+  justify-content: center;
+  padding: 16px 20px;
+}

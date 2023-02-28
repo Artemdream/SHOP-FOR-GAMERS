@@ -1,0 +1,267 @@
+.blog {
+    @media screen and (max-width: 767px) {
+        padding: 40px 0 48px 0;
+
+        background-image: url(../images/blog/line-mob.png);
+        background-repeat: no-repeat;
+        background-position: 2px 48px;
+        background-size: contain;
+    }
+
+    @include tablet {
+        padding: 120px 0;
+
+        background-image: url(../images/blog/line-tab.png);
+        background-repeat: no-repeat;
+        background-position: 2px 170px;
+        background-size: contain;
+    }
+
+    @include desktop {
+        padding: 120px 0;
+
+        background-image: url(../images/blog/line-des.png);
+        background-repeat: no-repeat;
+        background-position: 2px 165px;
+        background-size: contain;
+    }
+
+    & img {
+        @include mobile {
+            border-radius: 12px;
+        }
+    }
+}
+
+.blog-container {
+    @media screen and (max-width: 767px) {
+        padding: 0 16px;
+    }
+}
+
+.blog-subject {
+    font-family: 'Roboto';
+    font-style: normal;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 31px;
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 1.18;
+
+        margin-bottom: 67px;
+        margin-left: 59px;
+    }
+
+    @include desktop {
+        margin-bottom: 75px;
+        margin-left: 102px;
+    }
+}
+
+.blog-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 16px;
+
+
+    @include tablet {
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    @include desktop {
+        font-size: 56px;
+        margin-bottom: 52px;
+    }
+    
+}
+
+.article-wrap {
+    @include tablet {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 16px;
+    }
+
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.blog-list {
+    margin-bottom: 48px;
+}
+
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.blog-wrap {
+    @include desktop {
+        flex-direction: column;
+        align-items: stretch;
+        display: flex;
+    }
+    
+}
+
+.blog-article {
+    display: flex;
+}
+
+
+.blog-img {
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+
+    @include desktop {
+        height: 100%;
+        min-width: 387px;
+        margin-right: 121px;
+        display: block;
+    }
+}
+
+.article-img {
+    @media screen and (max-width: 479px) {
+        display: block;
+        margin: 0 -16px;
+        margin-bottom: 8px;
+        
+    }
+
+    @include mobile {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    @include tablet {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.blog-thumb {
+    @include tablet {
+        margin-left: 40px;
+    }
+
+    @include desktop {
+        width: 100%;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-left: 0;
+        display: flex;
+    }
+}
+
+.blog-desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+
+    @include tablet {
+        margin-bottom: 32px;
+        font-size: 24px;
+        width: 138px;
+    }
+
+    @include desktop {
+        margin-bottom: 24px;
+        width: 256px;
+    }
+    
+}
+
+.blog-date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--contacts-color);
+    margin-bottom: 16px;
+
+    @include tablet {
+        font-size: 24px;
+        width: 261px;
+    }
+
+    @include desktop {
+        width: 350px;
+    }
+}
+
+.blog-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+
+    @include tablet {
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 16px;
+    }
+    
+    
+}
+
+.blog-link {
+    justify-content: end;
+    line-height: 1;
+    text-decoration: none;
+    transition: text-shadow .25s cubic-bezier(.4, 0, .2, 1);
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--accent);
+
+    @include tablet {
+        font-size: 24px;
+    }
+}
+
+// ellipse and two circles below
+.pages-nav-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav-img, .nav-img-active {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-text-color);
+    border-radius: 8px;
+}
+
+.nav-img-active {
+    width: 40px;
+}
+
+
